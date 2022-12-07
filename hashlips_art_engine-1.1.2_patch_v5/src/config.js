@@ -26,9 +26,10 @@ const layerConfigurations = [
   {
     growEditionSizeTo: 10,
     layersOrder: [
-      { name: "top" },
-      { name: "middle" },
-      { name: "bottom" },
+      { name: "Background" },
+      { name: "Top" },
+      { name: "Middle" },
+      { name: "Bottom" },
     ],
   },
 ];
@@ -38,8 +39,8 @@ const shuffleLayerConfigurations = true;
 const debugLogs = false;
 
 const format = {
-  width: 512,
-  height: 512,
+  width: 1666,
+  height: 1666,
   smoothing: false,
 };
 
