@@ -61,6 +61,7 @@ export const connect = () => {
           method: "net_version",
         });
         if (networkId == CONFIG.NETWORK.ID) {
+          const gasPrice = await web3.eth.getGasPrice()
           const SmartContractObj = new Web3EthContract(
             abi,
             CONFIG.CONTRACT_ADDRESS
@@ -70,6 +71,7 @@ export const connect = () => {
               account: accounts[0],
               smartContract: SmartContractObj,
               web3: web3,
+              gasPrice: gasPrice,
             })
           );
           // Add listeners start
